@@ -8,9 +8,11 @@ export default class BottomMenu extends Component {
             <div className="bottom-menu-container">
                 <Button
                     btnImgSrc={require("../../assets/images/like.png")}
+                    onClick={this.props.onLikeClick}
                 ></Button>
                 <Button
                     btnImgSrc={require("../../assets/images/unlike.png")}
+                    onClick={this.props.onUnlikeClick}
                 ></Button>
             </div>
         );

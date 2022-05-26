@@ -7,9 +7,11 @@ export default class TopMenu extends Component {
         return (
             <div className="top-menu-container">
                 <Counter
+                    counterDisplay={this.props.happyCounterDisplay}
                     imageSrc={require("../../assets/images/happy.png")}
                 ></Counter>
                 <Counter
+                    counterDisplay={this.props.sadCounterDisplay}
                     imageSrc={require("../../assets/images/sad.jpg")}
                 ></Counter>
             </div>
