@@ -24,6 +24,7 @@ export default class MatchApp extends Component {
                     imageData[
                         prevState.happyCounter + prevState.sadCounter + 1
                     ],
+                didImageLoad: false,
             }),
             this.handleShowPopUp
         );
@@ -37,6 +38,7 @@ export default class MatchApp extends Component {
                     imageData[
                         prevState.happyCounter + prevState.sadCounter + 1
                     ],
+                didImageLoad: false,
             }),
             this.handleShowPopUp
         );
