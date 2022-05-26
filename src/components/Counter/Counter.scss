@@ -1,0 +1,11 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .counter-img {
+        width: 10rem;
+        border-radius: 50%;
+        height: 8rem;
+    }
+}

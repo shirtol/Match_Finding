@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,KAAK;CAMhB;;AAXD,AAMI,gBANY,CAMZ,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,mBAAmB,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI;EAC5C,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "ImagePanel.scss"
+    ],
+    "names": [],
+    "file": "ImagePanel.css"
+}
