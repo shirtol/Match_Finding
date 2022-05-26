@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,IAAI;CAClB",
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb",
     "sources": [
         "AppTitle.scss"
     ],

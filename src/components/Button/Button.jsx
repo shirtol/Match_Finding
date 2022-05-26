@@ -9,7 +9,7 @@ export default class Button extends Component {
                 disabled={this.props.disable}
                 onClick={this.props.onClick}
             >
-                <img className="image" alt="#" src={this.props.btnImgSrc}></img>
+                <i className={this.props.iconClassName}></i>
             </div>
         );
     }

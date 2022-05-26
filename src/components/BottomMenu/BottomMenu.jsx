@@ -8,12 +8,12 @@ export default class BottomMenu extends Component {
             <div className="bottom-menu-container">
                 <Button
                     disable={this.props.disable}
-                    btnImgSrc={require("../../assets/images/like.png")}
+                    iconClassName="fa-solid fa-thumbs-up fa-4x"
                     onClick={this.props.onLikeClick}
                 ></Button>
                 <Button
                     disable={this.props.disable}
-                    btnImgSrc={require("../../assets/images/unlike.png")}
+                    iconClassName="fa-solid fa-thumbs-down fa-4x"
                     onClick={this.props.onUnlikeClick}
                 ></Button>
             </div>

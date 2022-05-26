@@ -55,26 +55,27 @@ export default class MatchApp extends Component {
     };
 
     render() {
-        return this.state.isPopUpOpen ? (
-            <PopUp></PopUp>
-        ) : (
-            <div>
-                <AppTitle></AppTitle>
-                <TopMenu
-                    happyCounterDisplay={this.state.happyCounter}
-                    sadCounterDisplay={this.state.sadCounter}
-                ></TopMenu>
-                <ImagePanel
-                    imageSrc={this.state.currImage?.imageSrc}
-                    imageTitle={this.state.currImage?.title}
-                    onImageLoad={this.onImageLoad}
-                ></ImagePanel>
-                <BottomMenu
-                    onLikeClick={this.onLikeClick}
-                    onUnlikeClick={this.onUnlikeClick}
-                    disable={!this.state.didImageLoad}
-                ></BottomMenu>
-            </div>
+        return (
+            <>
+                <PopUp isShown={this.state.isPopUpOpen}></PopUp>
+                <div className="match-app-container">
+                    <AppTitle></AppTitle>
+                    <TopMenu
+                        happyCounterDisplay={this.state.happyCounter}
+                        sadCounterDisplay={this.state.sadCounter}
+                    ></TopMenu>
+                    <ImagePanel
+                        imageSrc={this.state.currImage?.imageSrc}
+                        imageTitle={this.state.currImage?.title}
+                        onImageLoad={this.onImageLoad}
+                    ></ImagePanel>
+                    <BottomMenu
+                        onLikeClick={this.onLikeClick}
+                        onUnlikeClick={this.onUnlikeClick}
+                        disable={!this.state.didImageLoad}
+                    ></BottomMenu>
+                </div>
+            </>
         );
     }
 }
