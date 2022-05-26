@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACnB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,YAAY;EAC7B,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "BottomMenu.scss"
+    ],
+    "names": [],
+    "file": "BottomMenu.css"
+}
