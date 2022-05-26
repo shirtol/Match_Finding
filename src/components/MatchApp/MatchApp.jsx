@@ -13,6 +13,7 @@ export default class MatchApp extends Component {
         sadCounter: 0,
         currImage: imageData[0],
         isPopUpOpen: false,
+        didImageLoad: false,
     };
 
     onLikeClick = () => {
@@ -47,6 +48,10 @@ export default class MatchApp extends Component {
         }
     };
 
+    onImageLoad = () => {
+        this.setState({ didImageLoad: true });
+    };
+
     render() {
         return this.state.isPopUpOpen ? (
             <PopUp></PopUp>
@@ -60,10 +65,12 @@ export default class MatchApp extends Component {
                 <ImagePanel
                     imageSrc={this.state.currImage?.imageSrc}
                     imageTitle={this.state.currImage?.title}
+                    onImageLoad={this.onImageLoad}
                 ></ImagePanel>
                 <BottomMenu
                     onLikeClick={this.onLikeClick}
                     onUnlikeClick={this.onUnlikeClick}
+                    disable={!this.state.didImageLoad}
                 ></BottomMenu>
             </div>
         );
