@@ -16,7 +16,9 @@
 
 .counter-container .counter-img {
   width: 10rem;
-  border-radius: 50%;
+  border-radius: 8px;
   height: 8rem;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
 }
 /*# sourceMappingURL=Counter.css.map */

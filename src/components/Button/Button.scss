@@ -1,6 +1,6 @@
 .btn-container {
-    .image {
-        width: 10rem;
+    & > * {
+        cursor: pointer;
     }
 }
 
