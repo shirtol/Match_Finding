@@ -1,5 +1,5 @@
-.btn-container .image {
-  width: 10rem;
+.btn-container > * {
+  cursor: pointer;
 }
 
 .btn-container[disabled] {

@@ -54,27 +54,43 @@ export default class MatchApp extends Component {
         this.setState({ didImageLoad: true });
     };
 
+    onStartQuiz = () => {
+        this.setState({
+            happyCounter: 0,
+            sadCounter: 0,
+            currImage: imageData[0],
+            isPopUpOpen: false,
+            didImageLoad: false,
+        });
+    };
+
     render() {
-        return this.state.isPopUpOpen ? (
-            <PopUp></PopUp>
-        ) : (
-            <div>
-                <AppTitle></AppTitle>
-                <TopMenu
-                    happyCounterDisplay={this.state.happyCounter}
-                    sadCounterDisplay={this.state.sadCounter}
-                ></TopMenu>
-                <ImagePanel
-                    imageSrc={this.state.currImage?.imageSrc}
-                    imageTitle={this.state.currImage?.title}
-                    onImageLoad={this.onImageLoad}
-                ></ImagePanel>
-                <BottomMenu
-                    onLikeClick={this.onLikeClick}
-                    onUnlikeClick={this.onUnlikeClick}
-                    disable={!this.state.didImageLoad}
-                ></BottomMenu>
-            </div>
+        return (
+            <>
+                <div className="bg-container"></div>
+                <PopUp
+                    isShown={this.state.isPopUpOpen}
+                    onStartQuiz={this.onStartQuiz}
+                ></PopUp>
+                <div className="match-app-container">
+                    <AppTitle></AppTitle>
+                    <TopMenu
+                        happyCounterDisplay={this.state.happyCounter}
+                        sadCounterDisplay={this.state.sadCounter}
+                    ></TopMenu>
+                    <ImagePanel
+                        isImageShown={!this.state.isPopUpOpen}
+                        imageSrc={this.state.currImage?.imageSrc}
+                        imageTitle={this.state.currImage?.title}
+                        onImageLoad={this.onImageLoad}
+                    ></ImagePanel>
+                    <BottomMenu
+                        onLikeClick={this.onLikeClick}
+                        onUnlikeClick={this.onUnlikeClick}
+                        disable={!this.state.didImageLoad}
+                    ></BottomMenu>
+                </div>
+            </>
         );
     }
 }

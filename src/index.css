@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "KeroKero";
+    src: local("KeroKero"),
+        url("./assets/fonts/KeroKero.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    color: #bcb7b795;
+    color: rgba(51, 51, 51, 0.712);
+    /* color: rgba(188, 147, 147, 0.329);
+    text-shadow: -1px 1px 0 #fff, 2px 2px 0 #303030, 1px -1px 0 #303030,
+        -1px -1px 0 #303030; */
 }
