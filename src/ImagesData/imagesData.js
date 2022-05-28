@@ -27,7 +27,7 @@ export const imageData = [
     },
     {
         imageSrc: images("./totoro.jpg"),
-        title: "Totoro",
+        title: "My neighbor Totoro",
     },
     {
         imageSrc: images("./whisperOfTheHeart.jpg"),
@@ -41,47 +41,8 @@ export const imageData = [
         imageSrc: images("./weathering.webp"),
         title: "Weathering with you",
     },
+    {
+        imageSrc: images("./kaguya.jpg"),
+        title: "The tail of princess Kaguya",
+    },
 ];
-
-// export const imageData = [
-//     {
-//         imageSrc: "../assets/images/questions/anohana.jpg",
-//         title: "Anohana",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/deathNote.jpg",
-//         title: "Death Note",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/kiki.jpg",
-//         title: "Kiki's delivery service",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/ponyo.webp",
-//         title: "Ponyo",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/princessMononoke.jpg",
-//         title: "Princess Mononoke",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/spiritedAway.jpg",
-//         title: "Spirited Away",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/totoro.jpg",
-//         title: "Totoro",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/whisperOfTheHeart.jpg",
-//         title: "Whisper Of The Heart",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/yourLieInApril.jpg",
-//         title: "Your Lie In April",
-//     },
-//     {
-//         imageSrc: "../assets/images/questions/weathering.webp",
-//         title: "Weathering with you",
-//     },
-// ];

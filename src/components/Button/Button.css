@@ -2,6 +2,12 @@
   cursor: pointer;
 }
 
+@media (max-height: 550px) {
+  .btn-container > * {
+    font-size: 3rem;
+  }
+}
+
 .btn-container[disabled] {
   pointer-events: none;
   opacity: 0.7;

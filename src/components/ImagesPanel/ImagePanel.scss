@@ -1,16 +1,22 @@
+@import "../../utils/mixin.scss";
+
 .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // width: 70%;
     height: 50vh;
-    // height: max-content;
+    @include responsive(tablet) {
+        height: 35vh;
+    }
+    @include responsive(mini-tablet) {
+        height: 20vh;
+    }
+    @include responsive(mobile-height) {
+        height: 35vh;
+    }
     .image {
-        // width: 60vw;
         height: inherit;
-
-        // width: 60rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 8px;
     }

@@ -1,6 +1,11 @@
+@import "../../utils/mixin.scss";
+
 .btn-container {
     & > * {
         cursor: pointer;
+        @include responsive(mobile-height) {
+            font-size: 3rem;
+        }
     }
 }
 
