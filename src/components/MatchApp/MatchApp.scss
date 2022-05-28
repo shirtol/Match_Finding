@@ -1,3 +1,5 @@
+@import "../../utils/mixin.scss";
+
 html {
     font-size: 62.5%;
     font-family: "KeroKero";
@@ -24,6 +26,14 @@ html {
     height: 100vh;
     width: 100%;
     gap: 3rem;
+    @include responsive(mini-tablet) {
+        gap: 2rem;
+        justify-content: space-evenly;
+    }
+    @include responsive(mini-mobile-height) {
+        gap: 0rem;
+        justify-content: space-evenly;
+    }
     // & > * {
     //     width: 50%;
     // }

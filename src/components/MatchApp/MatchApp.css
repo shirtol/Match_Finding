@@ -34,4 +34,22 @@ html {
   width: 100%;
   gap: 3rem;
 }
+
+@media (max-width: 650px) {
+  .match-app-container {
+    gap: 2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-height: 425px) {
+  .match-app-container {
+    gap: 0rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 /*# sourceMappingURL=MatchApp.css.map */

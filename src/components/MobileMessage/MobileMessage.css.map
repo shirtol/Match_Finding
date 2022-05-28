@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EACd,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,gBAAgB,EAAE,OAAO;EACzB,gBAAgB,EAAE,gDAAgD;EAClE,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,GAAG;CAIf;;ACKG,MAAM,EAAE,SAAS,EAAE,KAAK;EDpB5B,AAAA,iBAAiB,CAAC;IAaV,OAAO,EAAE,IAAI;GAEpB",
+    "sources": [
+        "MobileMessage.scss",
+        "../../utils/mixin.scss"
+    ],
+    "names": [],
+    "file": "MobileMessage.css"
+}

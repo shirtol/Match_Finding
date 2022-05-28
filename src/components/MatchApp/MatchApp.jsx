@@ -6,6 +6,7 @@ import TopMenu from "../TopMenu/TopMenu";
 import "./MatchApp.css";
 import { imageData } from "../../ImagesData/imagesData";
 import PopUp from "../PopUp/PopUp";
+import MobileMessage from "../MobileMessage/MobileMessage";
 
 export default class MatchApp extends Component {
     state = {
@@ -14,6 +15,7 @@ export default class MatchApp extends Component {
         currImage: imageData[0],
         isPopUpOpen: false,
         didImageLoad: false,
+        endQuizMessage: "",
     };
 
     onLikeClick = () => {
@@ -44,9 +46,21 @@ export default class MatchApp extends Component {
         );
     };
 
+    changeEndQuizMessage = () => {
+        if (this.state.happyCounter > this.state.sadCounter) {
+            return "よくできました";
+        } else {
+            return `お前はもう死んでいる`;
+        }
+    };
+
     handleShowPopUp = () => {
         if (this.state.currImage === undefined) {
-            this.setState({ isPopUpOpen: true });
+            const endQuizMessage = this.changeEndQuizMessage();
+            this.setState({
+                isPopUpOpen: true,
+                endQuizMessage: endQuizMessage,
+            });
         }
     };
 
@@ -68,9 +82,11 @@ export default class MatchApp extends Component {
         return (
             <>
                 <div className="bg-container"></div>
+                <MobileMessage></MobileMessage>
                 <PopUp
                     isShown={this.state.isPopUpOpen}
                     onStartQuiz={this.onStartQuiz}
+                    endQuizMessage={this.state.endQuizMessage}
                 ></PopUp>
                 <div className="match-app-container">
                     <AppTitle></AppTitle>

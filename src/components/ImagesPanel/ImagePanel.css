@@ -15,6 +15,24 @@
   height: 50vh;
 }
 
+@media (max-width: 950px) {
+  .image-container {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 650px) {
+  .image-container {
+    height: 20vh;
+  }
+}
+
+@media (max-height: 550px) {
+  .image-container {
+    height: 35vh;
+  }
+}
+
 .image-container .image {
   height: inherit;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

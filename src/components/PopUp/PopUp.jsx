@@ -8,7 +8,9 @@ export default class PopUp extends Component {
             this.props.isShown && (
                 <div className="pop-up-container ">
                     <div className="end-game-popup-container">
-                        <h1 className="end-title">WOW!</h1>
+                        <h1 className="end-title">
+                            {this.props.endQuizMessage}
+                        </h1>
                         <h4 className="end-msg">Do You Want To Play Again?</h4>
                         <Button
                             onClick={this.props.onStartQuiz}
